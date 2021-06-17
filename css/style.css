@@ -1,0 +1,149 @@
+html
+{box-sizing:border-box}
+
+*,*:before,*:after
+{box-sizing:inherit}
+
+html
+{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+
+html,body{
+    font-size: 15px;
+    line-height:1.5;
+}
+
+html{overflow-x:hidden}
+
+body{
+    margin:0;
+}
+
+
+/*fonts*/
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+
+
+/*colors*/
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+
+h1{
+    color: hsl(0, 0%, 95%);
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+button{
+    background-color: hsl(0, 0%, 95%);   
+}
+
+button:hover{
+    color: hsla(0, 0%, 100%, 0.75);
+    border:  solid hsla(0, 0%, 100%, 0.75);;
+}
+
+.btnSedan{
+    color: hsl(31, 77%, 52%);
+}
+
+.btnSedan:hover{
+    background-color:hsl(31, 77%, 52%);
+}
+
+.btnsuv{
+    color: hsl(184, 100%, 22%);
+}
+
+.btnsuv:hover{
+    background-color:hsl(184, 100%, 22%);
+}
+
+.btnlux{
+    color: hsl(179, 100%, 13%);
+}
+
+.btnlux:hover{
+    background-color:hsl(179, 100%, 13%);
+}
+
+/*Flexboxes*/
+
+body{
+/*Used to center the body*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    width: 750px;
+    height: max-content;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    display: flex;
+}
+
+.padding{
+    padding: 47px;
+}
+
+p{
+    font-size: 13px;
+    margin-bottom: 30px;
+    height: 150px;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 30px 0 5px 0;
+    border-radius: 20px;
+}
+
+
+
+@media screen and (max-width:421px){
+    .container{
+        height:max-content;
+        flex-direction: column;
+        margin: 40px 5px;
+        width:70%;
+    }
+
+    p{
+        margin: 0;
+    }
+
+    button{
+        margin: 0;
+    }
+    
+}
